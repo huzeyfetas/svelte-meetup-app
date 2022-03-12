@@ -1,12 +1,5 @@
 <header>
   <h1>MeetUps</h1>
-  <nav>
-    <ul>
-      <li>Link 1</li>
-      <li>link 2</li>
-      <li>link 3</li>
-    </ul>
-  </nav>
 </header>
 
 <style>
