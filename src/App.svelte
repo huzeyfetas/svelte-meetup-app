@@ -3,6 +3,7 @@
 
   import MeetupGrid from "./meetups/MeetupGrid.svelte";
   import TextInput from "./shared/TextInput.svelte";
+  import Button from "./shared/Button.svelte";
 
   let title = "";
   let subtitle = "";
@@ -99,7 +100,7 @@
       on:input={(e) => (description = e.target.value)}
     />
 
-    <button type="submit">Save</button>
+    <Button type="submit" caption="Save" />
   </form>
   <MeetupGrid {meetups} />
 </main>

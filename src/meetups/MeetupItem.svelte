@@ -1,4 +1,5 @@
 <script>
+  import Button from "../shared/Button.svelte";
   export let title;
   export let subtitle;
   export let imageUrl;
@@ -19,9 +20,10 @@
       <p>{description}</p>
     </div>
     <footer>
-      <a href="mailto:{contactEmail}"> Contact </a>
-      <button>Show Details</button>
-      <button>Favorite</button>
+      <Button href="mailto:{contactEmail}" caption="Contact" />
+
+      <Button type="button" caption="Favorite" mode="outline" />
+      <Button type="button" caption="Show Details" />
     </footer>
   </header>
 </article>
@@ -38,6 +40,9 @@
   .content,
   footer {
     padding: 1rem;
+  }
+  .content {
+    height: 4rem;
   }
 
   .image {
